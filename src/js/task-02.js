@@ -16,9 +16,6 @@ ingredients.map((ingredient) => {
   console.log(listItem);
   console.log(listItem.innerHTML);
   console.log(typeof listItem);
-
-  // console.log([...listItem]);
-  // console.log(typeof [...listItem]);
   list.append(listItem);
   return listItem;
 });

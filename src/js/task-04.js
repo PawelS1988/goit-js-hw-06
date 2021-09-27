@@ -1,8 +1,8 @@
 const qs = (selector) => document.querySelector(selector);
 
 let counterValue = 0;
-const btnDecrement = qs('button[data-action="decrement"]');
-const btnIncrement = qs('button[data-action="increment"]');
+const btnDecrease = qs('button[data-action="decrement"]');
+const btnIncrease = qs('button[data-action="increment"]');
 const textCounterValue = qs("span#value");
 
 const increaseCounterValue = () => {
@@ -15,5 +15,5 @@ const decreaseCounterValue = () => {
   textCounterValue.textContent = counterValue;
 };
 
-btnIncrement.addEventListener("click", increaseCounterValue);
-btnDecrement.addEventListener("click", decreaseCounterValue);
+btnIncrease.addEventListener("click", increaseCounterValue);
+btnDecrease.addEventListener("click", decreaseCounterValue);
